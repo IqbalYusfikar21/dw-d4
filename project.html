@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/project.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <div class="logo">
+                <img src="imgg/genshit.png" alt="logo" style="height: fit-content; width: 50%;"/>
+            </div>
+          </li>
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="project.html">Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Order NFT</a>
+      </div>
+    </nav>
+
+     <!-- Form blog -->
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form id="form">
+                    <h1>ADD MY PROJECT</h1>
+                    <div class="input-title">
+                        <label for="input-blog-title">Project Name</label>
+                        <input type="text" id="input-blog-title">
+                    </div>
+                    <div class="blog-date">
+                        <div class="start-date">
+                            <label for="input-blog-startDate">Start Date</label>
+                            <input type="date" id="input-blog-startDate">
+                        </div>
+                        <div class="end-date">
+                            <label for="input-blog-endDate">End Date</label>
+                            <input type="date" id="input-blog-endDate">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="input-blog-content">Description</label>
+                        <textarea id="input-blog-content"></textarea>
+                    </div>
+                    <div>
+                        <label>Technologies</label>
+                        <div class="tech">
+                            <div class="tech-left">
+                                <div class="chk-left">
+                                    <input type="checkbox" class="multi-input">
+                                    <label>Node Js</label>
+                                </div>
+                                <div class="chk-right">
+                                    <input type="checkbox" class="multi-input">
+                                    <label>Next Js</label>
+                                </div>
+                            </div>
+                            <div class="tech-right">
+                                <div class="chk-left">
+                                    <input type="checkbox" class="multi-input">
+                                    <label>React Js</label>
+                                </div>
+                                <div class="chk-right">
+                                    <input type="checkbox" class="multi-input">
+                                    <label>TypeScript</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="input-blog-image-group">
+                        <label for="input-blog-image">
+                            <div>
+                                <p>choose</p>
+                            </div>
+                            <i class="fa-solid fa-paperclip"></i>
+                        </label>
+                        <input type="file" id="input-blog-image" hidden />
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" onclick="addBlog(event)">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Blog Content -->
+    <hr>
+
+    <div class="blog-content">
+        <h1>MY PROJECT</h1>
+
+<!-- CARD CONTAINER -->
+
+            <div class="fContainer">
+                <div id="contents" class="card">
+                    <div class="container-card">
+                        <div class="card-content">
+                            <div class="img-cover1">
+                            </div>
+                            <h1>
+                                <a href="project-detail.html" target="_blank">
+                                    Our New Apps - User Friendly Interface
+                                </a>
+                            </h1>
+                            <p>duration: 1 month free premium</p>
+                            <div id="container-desc">
+                                App that used for creating project, it was deployed and can downloaded free on playstore. Happy download!
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-play"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="ctn-btn">
+                                <div class="btn-left">
+                                    <button>edit</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button>delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents" class="card">
+                    <div class="container-card">
+                        <div class="card-content">
+                            <div class="img-cover2">
+                            </div>
+                            <h1>
+                                <a href="project-detail.html">
+                                    Our New Apps - User Friendly Interface
+                                </a>
+                            </h1>
+                            <p>duration: 1 month free premium</p>
+                            <div id="container-desc">
+                                App that used for creating project, it was deployed and can downloaded free on playstore. Happy download!
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-play"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="ctn-btn">
+                                <div class="btn-left">
+                                    <button>edit</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button>delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents" class="card">
+                    <div class="container-card">
+                        <div class="card-content">
+                            <div class="img-cover3">
+                            </div>
+                            <h1>
+                                <a href="project-detail.html" target="_blank">
+                                    Our New Apps - User Friendly Interface
+                                </a>
+                            </h1>
+                            <p>duration: 1 month free premium</p>
+                            <div id="container-desc">
+                                App that used for creating project, it was deployed and can downloaded free on playstore. Happy download!
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-play"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="ctn-btn">
+                                <div class="btn-left">
+                                    <button>edit</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button>delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents" class="card">
+                    <div class="container-card">
+                        <div class="card-content">
+                            <div class="img-cover4">
+                            </div>
+                            <h1>
+                                <a href="project-detail.html" target="_blank">
+                                    Our New Apps - User Friendly Interface
+                                </a>
+                            </h1>
+                            <p>duration: 1 month free premium</p>
+                            <div id="container-desc">
+                                App that used for creating project, it was deployed and can downloaded free on playstore. Happy download!
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-play"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="ctn-btn">
+                                <div class="btn-left">
+                                    <button>edit</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button>delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents" class="card">
+                    <div class="container-card">
+                        <div class="card-content">
+                            <div class="img-cover5">
+                            </div>
+                            <h1>
+                                <a href="project-detail.html" target="_blank">
+                                    Our New Apps - User Friendly Interface
+                                </a>
+                            </h1>
+                            <p>duration: 1 month free premium</p>
+                            <div id="container-desc">
+                                App that used for creating project, it was deployed and can downloaded free on playstore. Happy download!
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-play"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="ctn-btn">
+                                <div class="btn-left">
+                                    <button>edit</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button>delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents" class="card">
+                    <div class="container-card">
+                        <div class="card-content">
+                            <div class="img-cover6">
+                            </div>
+                            <h1>
+                                <a href="project-detail.html" target="_blank">
+                                    Our New Apps - User Friendly Interface
+                                </a>
+                            </h1>
+                            <p>duration: 1 month free premium</p>
+                            <div id="container-desc">
+                                App that used for creating project, it was deployed and can downloaded free on playstore. Happy download!
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-google-play"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="ctn-btn">
+                                <div class="btn-left">
+                                    <button>edit</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button>delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/project.js"></script>
+</body>
+</html>
