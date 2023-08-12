@@ -426,3 +426,16 @@ body {
 hr {
     width: 80%;
 }
+
+.nav-right a {
+  transition: 0.3s ease-in-out;
+}
+
+.nav-right a:hover{
+  background-color: rgb(170, 126, 16);
+}
+
+.nav-left ul li:hover {
+  text-decoration: underline;
+  color: rgb(172, 130, 25);
+}
